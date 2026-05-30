@@ -42,6 +42,34 @@ public class Operators {
         System.out.println("a <= b: " + (a <= b)); // Less than or equal to
         System.out.println("a == b: " + (a == b)); // Equal to
         System.out.println("a != b: " + (a != b)); // Not equal to
-        System.out.println("a === b: " + (a == b)); // Identity operator (not applicable for primitive types)
+        
+        //Logical Operators
+        System.out.println("\n Logical Operators: ");
+        boolean x = true;
+        boolean y = false;
+        System.out.println("x && y: " + (x && y)); // Logical AND
+        System.out.println("x || y: " + (x || y)); // Logical OR    
+        System.out.println("!x: " + (!x)); // Logical NOT
+        System.out.println("!y: " + (!y)); // Logical NOT
+        System.out.println("!(x && y): " + (!(x && y))); // Logical NOT with AND
+        System.out.println("!(x || y): " + (!(x || y))); // Logical NOT with OR
+        System.out.println("x ^ y: " + (x ^ y)); // Logical XOR
+        System.out.println("!(x ^ y): " + (!(x ^ y))); // Logical NOT with XOR
+        
+        //Short-circuiting Operators
+        System.out.println("\nShort-circuiting Operators:");
+        System.out.println("x && y: " + (x && y)); // Logical AND
+        System.out.println("x || y: " + (x || y)); // Logical OR
+        System.out.println("!(x && y): " + (!(x && y))); // Logical NOT with AND
+        System.out.println("!(x || y): " + (!(x || y))); // Logical NOT with OR
+        System.out.println("x ^ y: " + (x ^ y)); // Logical XOR
+        System.out.println("!(x ^ y): " + (!(x ^ y))); // Logical NOT with XOR
+        // In short-circuiting, if the first operand is sufficient to determine the result,
+        //  the second operand is not evaluated.
+
+        //XNor Operator
+        System.out.println("\nXNor Operator:");
+        System.out.println("x XNOR y: " + !(x ^ y)); // Logical XNOR
+        
     }
 }
